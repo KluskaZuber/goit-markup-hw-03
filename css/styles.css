@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --brand-color-background_dark: #2f303a;
   --brand-color-background-light-grey: #e5e5e5;
@@ -29,7 +34,10 @@ body {
 }
 .link-menu {
   color: var(--brand-color-tekst);
+  display: inline-block;
+  margin-right: 10px;
   text-decoration: none;
+  list-style-type: none;
   height: 16px;
   font-weight: 500;
   font-size: 14px;
@@ -43,6 +51,7 @@ body {
 .link-footer {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  list-style-type: none;
   height: 16px;
   font-size: 14px;
   line-height: 24px;
@@ -113,6 +122,9 @@ body {
   border-radius: 4px;
   padding: 10px 42px 10px 42px;
   cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 }
 .button:active,
 .button:focus {
@@ -178,4 +190,36 @@ body {
 }
 .footer {
   background-color: var(--brand-color-background_dark);
+}
+.container {
+  width: 1200px;
+  display: inline-block;
+  align-items: center;
+}
+.header-container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.menu-2 {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.text-card-set {
+  list-style: none;
+  display: inline-flex;
+}
+.picture-card-set {
+  list-style: none;
+  display: inline-flex;
+}
+.picture-card-decoration {
+  justify-content: space-between;
 }

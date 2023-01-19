@@ -4,6 +4,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -18,16 +22,16 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header>
+    <header class="header-container">
       <a href="./index.html" class="logo"><span>Web</span>Studio</a>
 
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a class="link-menu" href="/Agencja">Agencja</a></li>
           <li><a class="link-menu" href="./portfolio.html">Portfolio</a></li>
           <li><a class="link-menu" href="/Kontakt">Kontakt</a></li>
         </ul>
-        <ul>
+        <ul class="menu-2">
           <li>
             <a class="link-menu" href="mailto:info@webstudio.com"
               >info@webstudio.com</a
@@ -41,138 +45,148 @@
     </header>
     <main>
       <section class="top_section">
-        <h1 class="h1">Efektywne rozwiązania dla Twojego biznesu!</h1>
-        <button type="button" class="button">Zamów usługę</button>
+        <div class="container">
+          <h1 class="h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button type="button" class="button">Zamów usługę</button>
+        </div>
       </section>
-      <section class="mid_section">
-        <ul>
-          <li>
-            <h3 class="h3">LOREM IPSUM</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam
-              reiciendis ullam tenetur ducimus debitis quo, possimus voluptatem
-              maiores? Nisi, animi!
-            </p>
-          </li>
-          <li>
-            <h3 class="h3">LOREM IPSUM</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam
-              reiciendis ullam tenetur ducimus debitis quo, possimus voluptatem
-              maiores? Nisi, animi!
-            </p>
-          </li>
-          <li>
-            <h3 class="h3">LOREM IPSUM</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam
-              reiciendis ullam tenetur ducimus debitis quo, possimus voluptatem
-              maiores? Nisi, animi!
-            </p>
-          </li>
-          <li>
-            <h3 class="h3">LOREM IPSUM</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam
-              reiciendis ullam tenetur ducimus debitis quo, possimus voluptatem
-              maiores? Nisi, animi!
-            </p>
-          </li>
-        </ul>
+      <section>
+        <div class="container">
+          <ul class="text-card-set">
+            <li>
+              <h3 class="h3">LOREM IPSUM</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                nam reiciendis ullam tenetur ducimus debitis quo, possimus
+                voluptatem maiores? Nisi, animi!
+              </p>
+            </li>
+            <li>
+              <h3 class="h3">LOREM IPSUM</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                nam reiciendis ullam tenetur ducimus debitis quo, possimus
+                voluptatem maiores? Nisi, animi!
+              </p>
+            </li>
+            <li>
+              <h3 class="h3">LOREM IPSUM</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                nam reiciendis ullam tenetur ducimus debitis quo, possimus
+                voluptatem maiores? Nisi, animi!
+              </p>
+            </li>
+            <li>
+              <h3 class="h3">LOREM IPSUM</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                nam reiciendis ullam tenetur ducimus debitis quo, possimus
+                voluptatem maiores? Nisi, animi!
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="mid_section">
-        <h2 class="h2">Czym się zajmujemy</h2>
-        <ul>
-          <li>
-            <img
-              src="images/programmer.jpg"
-              width="370"
-              height="294"
-              alt="Męskie dłonie piszące na klawiaturze"
-            />
-          </li>
-          <li>
-            <img
-              src="images/developing.jpg"
-              width="370"
-              height="294"
-              alt="Kobiece dłoie pracujące nas UI"
-            />
-          </li>
-          <li>
-            <img
-              src="images/design.jpg"
-              width="370"
-              height="294"
-              alt="Praca na tablecie nad designem strony"
-            />
-          </li>
-        </ul>
+      <section>
+        <div class="container">
+          <h2 class="h2">Czym się zajmujemy</h2>
+          <ul class="picture-card-set">
+            <li>
+              <img
+                src="images/programmer.jpg"
+                width="370"
+                height="294"
+                alt="Męskie dłonie piszące na klawiaturze"
+              />
+            </li>
+            <li>
+              <img
+                src="images/developing.jpg"
+                width="370"
+                height="294"
+                alt="Kobiece dłoie pracujące nas UI"
+              />
+            </li>
+            <li>
+              <img
+                src="images/design.jpg"
+                width="370"
+                height="294"
+                alt="Praca na tablecie nad designem strony"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="down_section">
-        <h2 class="h2">Nasz zespół</h2>
-        <ul>
-          <li>
-            <img
-              src="images/product_design.jpg"
-              alt="Uśmiechnięty męzczyzna w okularach"
-              width="270"
-              height="260"
-            />
-            <h3 class="second-h3">John Doe</h3>
-            <p class="second-text">Product Designer</p>
-          </li>
+      <section>
+        <div class="container">
+          <h2 class="h2">Nasz zespół</h2>
+          <ul class="picture-card-set" class="picture-card-decoration">
+            <li>
+              <img
+                src="images/product_design.jpg"
+                alt="Uśmiechnięty męzczyzna w okularach"
+                width="270"
+                height="260"
+              />
+              <h3 class="second-h3">John Doe</h3>
+              <p class="second-text">Product Designer</p>
+            </li>
 
-          <li>
-            <img
-              src="images/frontend_dev.jpg"
-              alt="Uśmiechnięta blondynka w okularach"
-              width="270"
-              height="260"
-            />
-            <h3 class="second-h3">John Doe</h3>
-            <p class="second-text">Frontend Developer</p>
-          </li>
+            <li>
+              <img
+                src="images/frontend_dev.jpg"
+                alt="Uśmiechnięta blondynka w okularach"
+                width="270"
+                height="260"
+              />
+              <h3 class="second-h3">John Doe</h3>
+              <p class="second-text">Frontend Developer</p>
+            </li>
 
-          <li>
-            <img
-              src="images/marketing.jpg"
-              alt="Uśmiechnięty marketingowiec"
-              width="270"
-              height="260"
-            />
-            <h3 class="second-h3">John Doe</h3>
-            <p class="second-text">Marketing</p>
-          </li>
+            <li>
+              <img
+                src="images/marketing.jpg"
+                alt="Uśmiechnięty marketingowiec"
+                width="270"
+                height="260"
+              />
+              <h3 class="second-h3">John Doe</h3>
+              <p class="second-text">Marketing</p>
+            </li>
 
-          <li>
-            <img
-              src="images/ui_designer.jpg"
-              alt="Zamyślony mężczyzna w okularach"
-              width="270"
-              height="260"
-            />
-            <h3 class="second-h3">John Doe</h3>
-            <p class="second-text">Marketing</p>
-          </li>
-        </ul>
+            <li>
+              <img
+                src="images/ui_designer.jpg"
+                alt="Zamyślony mężczyzna w okularach"
+                width="270"
+                height="260"
+              />
+              <h3 class="second-h3">John Doe</h3>
+              <p class="second-text">Marketing</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
-      <address>
-        <ul>
-          <li class="adress">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li>
-            <a class="link-footer" href="mailto:info@webstudio.com"
-              >info@webstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link-footer" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
+        <address>
+          <ul>
+            <li class="adress">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li>
+              <a class="link-footer" href="mailto:info@webstudio.com"
+                >info@webstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link-footer" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
