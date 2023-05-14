@@ -99,6 +99,7 @@ body {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  margin-bottom: 50px;
 }
 .h3 {
   color: var(--brand-color-header);
@@ -183,22 +184,12 @@ body {
 .slogan {
   padding: 200px 0;
 }
-.lorem {
-  display: flex;
-  column-gap: 30px;
-  justify-content: space-between;
-}
-.galery {
-  display: flex;
-  column-gap: 30px;
-  justify-content: space-between;
-  margin-top: 50px;
-}
+.lorem,
+.galery,
 .team-galery {
   display: flex;
   column-gap: 30px;
   justify-content: space-between;
-  margin-top: 50px;
 }
 .team-galery li {
   text-align: center;
@@ -214,7 +205,7 @@ body {
 }
 .little-menu {
   display: flex;
-  margin-top: 94px;
+  /* margin-top: 94px; */
   column-gap: 8px;
   justify-content: center;
 }
@@ -224,13 +215,11 @@ body {
   padding-top: 50px;
   column-gap: 30px;
   row-gap: 30px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .portfolio li {
   text-align: left;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #eeeeee;
 }
 .portfolio-text {
   color: var(--brand-color-tekst);
@@ -242,7 +231,7 @@ body {
   color: var(--brand-color-header);
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 36px;
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 4px;
